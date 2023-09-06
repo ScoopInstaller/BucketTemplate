@@ -19,8 +19,7 @@ Template bucket for [Scoop](https://scoop.sh), the Windows command-line installe
    - Then `Save`.
 4. Document the bucket in `README.md`.
 5. Replace the placeholder repository string in `bin/auto-pr.ps1`.
-6. Create new manifests by copying `bucket/app-name.json.template` to
-   `bucket/<app-name>.json`.
+6. Create new manifests by copying `bucket/app-name.json.template` to `bucket/<app-name>.json`.
 7. Commit and push changes.
 
 ## How do I install these manifests?
@@ -34,7 +33,4 @@ scoop install <bucketname>/<manifestname>
 
 ## How do I contribute new manifests?
 
-To make a new manifest contribution, please read the [Contributing
-Guide](https://github.com/ScoopInstaller/.github/blob/main/.github/CONTRIBUTING.md)
-and [App Manifests](https://github.com/ScoopInstaller/Scoop/wiki/App-Manifests)
-wiki page.
+To make a new manifest contribution, please read the [Contributing Guide](https://github.com/ScoopInstaller/.github/blob/main/.github/CONTRIBUTING.md) and [App Manifests](https://github.com/ScoopInstaller/Scoop/wiki/App-Manifests) wiki page.
