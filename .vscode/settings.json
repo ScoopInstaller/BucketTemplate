@@ -15,6 +15,7 @@
             ]
         }
     ],
+    "json.format.keepLines": true
     "files.exclude": {
         "**/.git": true,
         "**/.svn": true,
