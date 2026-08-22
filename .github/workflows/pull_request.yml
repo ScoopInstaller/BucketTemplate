@@ -3,6 +3,8 @@ name: Pull Requests
 on:
   pull_request:
     types: [opened]
+  issue_comment:
+    types: [created]
 
 permissions:
   contents: read
@@ -11,6 +13,7 @@ permissions:
 jobs:
   pullRequestHandler:
     name: PullRequestHandler
+    if: github.event_name == 'pull_request' || (github.event.issue.pull_request && startsWith(github.event.comment.body, '/verify'))
     runs-on: windows-latest
     steps:
       - name: Checkout
